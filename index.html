@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>X O Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen">
+    <div class="welcome-card">
+      <h1 class="welcome-title">X O Game</h1>
+      <p class="welcome-subtitle">Made using HTML, CSS and JavaScript</p>
+      <button id="start-game" class="primary-btn">Play Now</button>
+    </div>
+  </div>
+
+  <div id="game-wrapper" class="hidden">
+    <div id="symbol-choice">
+      <h2>Choose Your Symbol</h2>
+      <div class="symbol-buttons">
+        <button class="symbol-btn" data-symbol="X">Play as X</button>
+        <button class="symbol-btn" data-symbol="O">Play as O</button>
+      </div>
+    </div>
+
+    <div id="board" class="hidden">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div id="overlay-message"></div>
+    <button id="reset">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
